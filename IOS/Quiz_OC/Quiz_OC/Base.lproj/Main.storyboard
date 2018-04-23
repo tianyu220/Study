@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxs-Ir-JNe">
+                                <rect key="frame" x="175" y="72" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7te-AC-ahD">
+                                <rect key="frame" x="175" y="281" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FaT-AP-riI">
+                                <rect key="frame" x="142" y="101" width="91" height="30"/>
+                                <state key="normal" title="nextQuestion"/>
+                                <connections>
+                                    <action selector="nextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Aco-7M-WOm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3e-ry-yNP">
+                                <rect key="frame" x="144" y="318" width="86" height="30"/>
+                                <state key="normal" title="showAnswer"/>
+                                <connections>
+                                    <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fmm-vq-2LP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7te-AC-ahD" firstAttribute="centerX" secondItem="FaT-AP-riI" secondAttribute="centerX" id="938-w2-w4c"/>
+                            <constraint firstItem="Q3e-ry-yNP" firstAttribute="centerX" secondItem="FaT-AP-riI" secondAttribute="centerX" id="9CO-Tz-x7B"/>
+                            <constraint firstItem="Pxs-Ir-JNe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9oa-sJ-zKo"/>
+                            <constraint firstItem="Pxs-Ir-JNe" firstAttribute="centerX" secondItem="FaT-AP-riI" secondAttribute="centerX" id="HNL-PG-mGG"/>
+                            <constraint firstItem="FaT-AP-riI" firstAttribute="top" secondItem="Pxs-Ir-JNe" secondAttribute="bottom" constant="8" id="NZg-aV-rkR"/>
+                            <constraint firstItem="Q3e-ry-yNP" firstAttribute="top" secondItem="7te-AC-ahD" secondAttribute="bottom" constant="16" id="VdD-d6-mcy"/>
+                            <constraint firstItem="Pxs-Ir-JNe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="lx0-en-fiQ"/>
+                            <constraint firstItem="7te-AC-ahD" firstAttribute="top" secondItem="FaT-AP-riI" secondAttribute="bottom" constant="150" id="yiR-Tz-g3T"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerLable" destination="7te-AC-ahD" id="xoN-Jn-Wih"/>
+                        <outlet property="questionLable" destination="Pxs-Ir-JNe" id="eQW-KX-Ezm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
